@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="src.com.ui.DoExerciseActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="?colorPrimary">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/btn_back_selector"/>
+        <TextView
+            android:id="@+id/doExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="习题"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/deleteExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/doExercise"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
+            android:text="删除课程"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/exerciseLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择题"
+            android:textSize="17dp"
+            android:background="@drawable/button_register"
+            android:textColor="@color/login_btn_text_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="6dp"/>
+        <TextView
+            android:id="@+id/exerciseContent"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="公公起早贪黑，打早工，打晚工。挣工分，夺口粮。种南瓜，栽红薯。不论天晴下雨，总是一双赤脚。被水牛踩过，被黄牛挖过，手被大虺咬过，脚被玻璃划过，伤痕难瘉，怎能忘记。"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:id="@+id/A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="A:说什么我都不是在真的假的我说的都是真的"
+            android:textSize="15dp"/>
+        <TextView
+        android:id="@+id/B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="B:说什么我都不是在真的假的我说的都是真的"
+        android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="C:说什么我都不是在真的假的我说的都是真的"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="D:说什么我都不是在真的假的我说的都是真的"
+            android:textSize="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/a_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:textSize="20dp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/b_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="B"
+                android:textSize="20dp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/c_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="C"
+                android:textSize="20dp"
+
+                />
+
+            <RadioButton
+                android:id="@+id/d_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="D"
+                android:textSize="20dp"
+
+                />
+        </RadioGroup>
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:text="提交"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/rightKey"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="正确答案：B"
+            android:textSize="20dp"
+            android:background="@drawable/button_register"
+            android:textColor="@color/login_btn_text_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="6dp"/>
+    </LinearLayout>
+
+</LinearLayout>

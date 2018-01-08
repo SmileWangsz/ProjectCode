@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A8F1</color>
+    <color name="colorPrimaryDark">#00A8F1</color>
+    <color name="colorAccent">#038ECE</color>
+
+    <color name="milk_white">#f5f5f5</color>
+    <color name="white">#ffffff</color>
+    <color name="register_hint_text_color">#AEAEAE</color>
+    <color name="login_btn_text_color">#0fc4d9</color>
+</resources>
