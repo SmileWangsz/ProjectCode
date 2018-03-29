@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/questionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第1章 第1节"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/register_hint_text_color"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/questionPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数据库的查询语句的应用"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/register_hint_text_color"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/questionName"
+            />
+    </RelativeLayout>
+</LinearLayout>

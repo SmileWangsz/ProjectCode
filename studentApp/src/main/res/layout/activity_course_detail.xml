@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="src.com.ui.CourseDetailActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relateLayoutregister"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="?colorPrimary">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:background="@drawable/btn_back_selector"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="选择教师"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/courseListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:dividerHeight="3dp"
+        android:divider="@color/register_hint_text_color"
+        />
+
+</LinearLayout>

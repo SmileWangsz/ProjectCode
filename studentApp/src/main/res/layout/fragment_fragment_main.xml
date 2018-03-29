@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context="src.com.ui.FragmentMain">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="@color/register_hint_text_color">
+
+        <src.com.util.CircleImageView
+            android:id="@+id/user_image"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/userimage" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/user_image"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="25dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/bordersecond">
+
+        <TextView
+            android:id="@+id/xibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:text="系部："
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/edit_xibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/xibu"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="18dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/bordersecond">
+
+        <TextView
+            android:id="@+id/zhuanye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:text="专业："
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/edit_zhuanye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/zhuanye"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/bordersecond">
+
+        <TextView
+            android:id="@+id/banji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:text="班级："
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/edit_banji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/banji"
+            android:layout_marginLeft="20dp"
+            android:text=""
+            android:textSize="18dp"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/quitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp"
+        android:text="退出登录"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
